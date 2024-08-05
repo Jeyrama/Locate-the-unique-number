@@ -18,3 +18,6 @@ Example:
   Expected output:
   6
 */
+
+
+// Solution
