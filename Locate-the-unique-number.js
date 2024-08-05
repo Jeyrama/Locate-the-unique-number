@@ -27,3 +27,16 @@ function findUnique(numbers) {
 }
 
 // or
+
+function findUnique(numbers) {
+  let set = new Set();
+  
+  numbers.forEach(
+                    x => {  if(set.has(x))
+                              set.delete(x);
+                            else 
+                              set.add(x);  }
+                  );
+  
+  return set.values().next().value;
+}
